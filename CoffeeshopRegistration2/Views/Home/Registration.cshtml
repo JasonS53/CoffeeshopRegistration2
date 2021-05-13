@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form method="post" asp-action="SaveCustomers">
+    <div>
+        <label for="FirstName">Please enter your first name:</label>
+        <input type="text" name="FirstName" id="FirstName" required/>
+    </div>
+
+    <div>
+        <label for="LastName">Please enter your last name:</label>
+        <input type="text" name="LastName" id="LastName" required />
+    </div>
+
+    <div>
+        <label for="Email">Please enter your e-mail:</label>
+        <input type="email" name="Email" id="Email" required/>
+    </div>
+
+    <div>
+        <label for="Password">Please choose a password (8 characters minimum):</label>
+        <input type="password" name="Password" id="Password" minlength="8" required pattern = "^[A-Za-z]+\d+.*$"/>
+    </div>
+
+    <div>
+        <label for="Birthday">Please enter a birthday.</label>
+        <input type="date" id="Birthday" name="Birthday" required />
+    </div>
+
+    <div>
+        <p>Please select your coffee temperature:</p>
+        <input type="radio" id="hot" name="CoffeeTemp" value="hot" required />
+        <label for="hot">Hot</label><br>
+        <input type="radio" id="iced" name="CoffeeTemp" value="iced" required />
+        <label for="iced">Iced</label><br>
+        <input type="radio" id="I don't like coffee" name="CoffeeTemp" value="none" required />
+        <label for="none">I don't like coffee</label>
+    </div>
+
+    <div>
+        <p>Please select your coffee preference:</p>
+        <input type="radio" id="black" name="CoffeeType" value="black" required />
+        <label for="black">Black</label><br>
+        <input type="radio" id="fancy" name="CoffeeType" value="fancy" required />
+        <label for="fancy">Fancy</label><br>
+        <input type="radio" id="I don't like coffee" name="CoffeeType" value="none" required />
+        <label for="none">I don't like coffee</label>
+    </div>
+
+    <div>
+        <p>Please select your tea temperature:</p>
+        <input type="radio" id="hot" name="TeaTemp" value="hot" required />
+        <label for="hot">Hot</label><br>
+        <input type="radio" id="iced" name="TeaTemp" value="iced" required />
+        <label for="iced">Iced</label><br>
+        <input type="radio" id="I don't like tea" name="TeaTemp" value="none" required />
+        <label for="none">I don't like tea</label>
+    </div>
+
+    <div>
+        <p>Please select your tea preference:</p>
+        <input type="radio" id="black" name="TeaType" value="black" required />
+        <label for="black">Black</label><br>
+        <input type="radio" id="green" name="TeaType" value="green" required />
+        <label for="green">Green</label><br>
+        <input type="radio" id="herbal" name="TeaType" value="herbal" required />
+        <label for="herbal">Herbal</label><br>
+        <input type="radio" id="I don't like tea" name="TeaType" value="none" required />
+        <label for="none">I don't like tea</label>
+    </div>
+
+    <input type="submit" />
+</form>
